@@ -11,6 +11,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("name")) {
             return "MyTeam";
         }
+        if (query.toLowerCase().contains("spaghetti")){
+            return "I like to eat spaghetti and meatballs";
+        }
         return "";
     }
 }
