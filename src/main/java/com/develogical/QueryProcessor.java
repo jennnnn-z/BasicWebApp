@@ -2,11 +2,7 @@ package com.develogical;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+
 
 public class QueryProcessor {
 
@@ -57,6 +53,19 @@ public class QueryProcessor {
             }
             return "" + sum;
         }
+        // if(query.toLowerCase().contains("minus")){
+        //     int sum = 0;
+        //     String[] parts = query.split(" ");
+        //     for(int i = 0; i < parts.length; i++){
+        //         try{
+        //             int num = Integer.parseInt(parts[i]);
+        //             sum -= num;
+        //         } catch (NumberFormatException nfe){
+        //         }
+                
+        //     }
+        //     return "" + sum;
+        // }
         if(query.toLowerCase().contains("multiplied")){
             int sum = 1;
             String[] parts = query.split(" ");
